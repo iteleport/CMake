@@ -1791,6 +1791,7 @@ void cmGlobalXCodeGenerator::CreateBuildSettings(cmTarget& target,
     {
     buildSettings->AddAttribute("LIBRARY_STYLE",
                                 this->CreateString("STATIC"));
+    buildSettings->AddAttribute("COPY_PHASE_STRIP", this->CreateString("NO"));
     break;
     }
 
