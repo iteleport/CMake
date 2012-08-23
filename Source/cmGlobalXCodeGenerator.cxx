@@ -3122,6 +3122,8 @@ void cmGlobalXCodeGenerator
         buildSettings->AddAttribute("SDKROOT",
                                 this->CreateString(sysroot));
 
+    buildSettings->AddAttribute("STRIP_INSTALLED_PRODUCT", this->CreateString("NO"));
+
     std::string archString;
     const char* sep = "";
     for( std::vector<std::string>::iterator i =
