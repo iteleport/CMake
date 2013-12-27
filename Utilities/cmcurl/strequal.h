@@ -34,3 +34,4 @@
 
 /* case insensitive strstr() */
 char *Curl_strcasestr(const char *haystack, const char *needle);
+#endif
